@@ -7,15 +7,15 @@ For semantic content searching, we have used a built in tool i.e. Google's word2
 For testing of code, we have given a sampleData.txt file.
 
 How to run?
-1. By using "make" command, we can compile and make all files as executable file.
-2. preprocess the text data files to remove special symbols and extra blank spaces using 
-   "cd <training_data_dir>;
-   python pre_process_4_word2vec.py <file_name>"
-3. Combine all in one file
-   "cat *.processed/* >> /<path_to_new_file>"
-4. We need to create vectors of the text data files. 
+- By using "make" command, we can compile and make all files as executable file.
+- preprocess the text data files to remove special symbols and extra blank spaces using 
+   "cd training_data_dir;
+   python pre_process_4_word2vec.py file_name"
+- Combine all in one file
+   "cat *.processed/* >> /path_to_new_file"
+- We need to create vectors of the text data files. 
    Use "./createVector.sh" in each system to create vectors.
-5. Use "./semanticSearch <WORD_TO_BE_SEARCHED>" to search for the word.
-6. Output will be the semnatically related words and the node number in peer to peer connection.
+- Use "./semanticSearch WORD_TO_BE_SEARCHED" to search for the word.
+- Output will be the semnatically related words and the node number in peer to peer connection.
 
 
